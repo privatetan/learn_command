@@ -26,19 +26,33 @@ cat [-AbeEnstTuv] [--help] [--version] fileName
 
 **注**：“>”，会覆盖输出到的文件，“>>”，会在输出到的文件末追加；
 
-1. 把 【file1】 的文档内容加上【行号】后输入到【file2】 这个文档里（**覆盖输入**）
+1. 【查看】文件【file.txt】内容
 
 ```
-cat -n file1 > file2
+cat file.txt
 ```
 
-2. 把 【file1】 和 【file2】 的文档内容加上【行号】（空白行不加）之后将输入到 【file3】 文档里（**末尾追加**）
+2. 【创建】文件file， 其中【END】表示输入文本结束标志；
 
 ```
-cat -b file1 file2 >> file3
+cat > file.txt << END  
+注意：再次执行cat > file.txt << END会覆盖文件内容；
+     执行cat >> file.txt << END会追加内容至末尾；
 ```
 
-3. 清空 /etc/test.txt 文档内容
+3. 把 file1.txt 的文档内容加上【行号】后【覆盖输入】到file2.txt 这个文档里（**覆盖输入**）
+
+```
+cat -n file1.txt > file2.txt
+```
+
+4. 把 file1.txt 和 file2.txt 的文档内容加上【行号】（空白行不加）之后将内容【追加输入】到 file3.txt 文档里（**末尾追加**）
+
+```
+cat -b file1.txt file2.txt >> file3.txt
+```
+
+5. 清空 /etc/test.txt 文档内容
 
 ```
 cat /dev/null > /etc/test.txt
