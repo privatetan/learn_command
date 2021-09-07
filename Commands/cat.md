@@ -2,7 +2,7 @@
 
 连接文件并打印到标准输出设备
 
-## 格式
+## 语法
 
 ```
 cat [-AbeEnstTuv] [--help] [--version] fileName

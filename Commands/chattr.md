@@ -10,7 +10,7 @@
 chattr [-RVf] [-+=AacDdijsSu] [-v version] [文件或目录...]
 ```
 
-## 参数
+## 选项（Options）
 
 ```
 -R: 递归处理，将指定目录下的所有文件及子目录一并处理；
