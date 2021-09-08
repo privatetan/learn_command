@@ -4,6 +4,8 @@ change group，用于变更文件或目录的所属群组
 
 与 [chown](https://www.runoob.com/linux/linux-comm-chown.html) 命令不同，chgrp 允许普通用户改变文件所属的组，只要该用户是该组的一员
 
+**使用权限**：普通用户组成员
+
 ## 语法 
 
 ```
